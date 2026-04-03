@@ -6,11 +6,11 @@ with sync_playwright() as playwright:
     page = browser.new_page()
 
     # Переходим на страницу
-    page.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/registration")
+    page.goto("https://st.infolab.kz/ru/account/login")
 
     # Заполняем поле Email
     email_input = page.locator('//div[@data-testid="registration-form-email-input"]//div//input')
-    email_input.fill("user.name@gmail.com")
+    email_input.fill("murat")
 
     # Заполняем поле Username
     username_input = page.locator('//div[@data-testid="registration-form-username-input"]//div//input')
